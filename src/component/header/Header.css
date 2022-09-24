@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+.navbar {
+    width: 1550px;
+    z-index: 10;
+    background-color: #fbf2cf75;
+    height: 50px;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    position: absolute;
+}
+
+.left {
+    padding: 5px 60px 10px 30px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 30px;
+    cursor: pointer;
+    float: left;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.left:hover {
+    color: #000;
+}
+
+.right {
+    padding-top: 12px;
+    cursor: pointer;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+.light {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.light:hover {
+    color: #000;
+}
+
+.work {
+    margin-left: 30px;
+    animation: leftToRight 1s linear;
+}
+
+.about {
+    margin-left: 30px;
+}
+
+.contact {
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+.animate {
+    display: inline-block;
+    position: relative;
+}
+
+.animate::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #A1C298;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.animate:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.dark {
+    color: #000;
+}

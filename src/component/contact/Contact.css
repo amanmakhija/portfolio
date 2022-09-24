@@ -1,0 +1,74 @@
+.contactMain {
+    margin-left: -30px;
+    height: 100vh;
+    width: 100vw;
+    font-family: Roboto;
+    text-align: center;
+    background-color: #A1C298;
+    padding-top: 100px;
+}
+
+.main {
+    margin-top: 50px;
+    z-index: 10;
+}
+
+.nameInput {
+    margin-top: 20px;
+    margin-left: 438px;
+    display: flex;
+}
+
+.input {
+    padding: 0 0 0 10px;
+    width: 313px;
+    margin: 30px 30px 0 0;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.wideInputs {
+    width: 670px;
+    margin-left: 50px;
+    padding: 0 0 0 10px;
+}
+
+.open {
+    height: 80px;
+}
+
+.message {
+    margin-left: 0;
+    padding: 5px 0 0 10px;
+}
+
+.circle3 {
+    background-color: #c6ebc5;
+    border-radius: 50%;
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    right: 400px;
+    z-index: 1;
+}
+
+.button {
+    text-align: center;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    z-index: 10;
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 50%;
+    margin-top: 50px;
+    padding-bottom: 90px;
+    border: 1px solid #8ccb7a;
+    background-color: #A1C298;
+}
+
+.button:hover {
+    background-color: oldlace;
+}

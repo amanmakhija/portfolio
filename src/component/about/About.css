@@ -1,0 +1,71 @@
+.aboutMain {
+    margin-left: -30px;
+    height: 100vh;
+    width: 100vw;
+    font-family: Roboto;
+    text-align: center;
+    background-color: #A1C298;
+    padding-top: 100px;
+}
+
+.aboutMainDiv {
+    display: flex;
+}
+
+.imageContainer {
+    margin-top: 25px;
+    margin-left: -300px;
+}
+
+.image {
+    height: 90%;
+    width: 35%;
+}
+
+.aboutTextContainer {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: -100px;
+}
+
+.aboutText {
+    margin-left: 20px;
+    font-size: 150%;
+    line-height: 2;
+}
+
+.skills {
+    margin-top: 35px;
+    margin-left: -20px;
+}
+
+.skillsHeading {
+    margin-left: 260px;
+}
+
+.skillsMainDiv {
+    display: block;
+}
+
+.skillsMainDiv>div {
+    display: flex;
+    margin: 30px;
+}
+
+.MongoDB,
+.ReactJS,
+.HTML,
+.JS {
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.Express,
+.NodeJS,
+.CSS,
+.Android {
+    border-radius: 50%;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}

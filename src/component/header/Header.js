@@ -10,27 +10,43 @@ export default function Header() {
 
     const path = window.location.pathname;
 
+    const aboutMe = () => {
+        setAbout(true);
+        setWork(false);
+        setContact(false);
+        setHome(false);
+    };
+
+    const contactMe = () => {
+        setAbout(false);
+        setWork(false);
+        setContact(true);
+        setHome(false);
+    };
+
+    const myWork = () => {
+        setAbout(false);
+        setWork(true);
+        setContact(false);
+        setHome(false);
+    };
+
+    const homePage = () => {
+        setAbout(false);
+        setWork(false);
+        setContact(false);
+        setHome(true);
+    };
+
     useEffect(() => {
         if (path === "/about-me") {
-            setAbout(true);
-            setWork(false);
-            setContact(false);
-            setHome(false);
+            aboutMe();
         } else if (path === "/contact-me") {
-            setAbout(false);
-            setWork(false);
-            setContact(true);
-            setHome(false);
+            contactMe();
         } else if (path === "/my-work") {
-            setAbout(false);
-            setWork(true);
-            setContact(false);
-            setHome(false);
+            myWork();
         } else {
-            setAbout(false);
-            setWork(false);
-            setContact(false);
-            setHome(true);
+            homePage();
         }
     }, [path]);
 
@@ -38,17 +54,17 @@ export default function Header() {
         <nav className='navbar'>
             <div>
                 <div>
-                    <Link className={home ? 'dark left' : 'light left'} to="/"><span>Aman</span></Link>
+                    <Link onClick={() => homePage()} className={home ? 'dark left' : 'light left'} to="/"><span>Aman</span></Link>
                 </div>
                 <div className='rightDiv'>
                     <div>
-                        <Link className={contact ? 'dark animate right contact' : 'light animate right contact'} to="/contact-me"><span>Contact Me</span></Link>
+                        <Link onClick={() => contactMe()} className={contact ? 'dark animate right contact' : 'light animate right contact'} to="/contact-me"><span>Contact Me</span></Link>
                     </div>
                     <div>
-                        <Link className={work ? 'dark animate right contact' : 'light animate right contact'} to="/my-work"><span>My Work</span></Link>
+                        <Link onClick={() => myWork()} className={work ? 'dark animate right contact' : 'light animate right contact'} to="/my-work"><span>My Work</span></Link>
                     </div>
                     <div>
-                        <Link className={about ? 'dark animate right contact' : 'light animate right contact'} to="/about-me"><span>About</span></Link>
+                        <Link onClick={() => aboutMe()} className={about ? 'dark animate right contact' : 'light animate right contact'} to="/about-me"><span>About</span></Link>
                     </div>
                 </div>
             </div>

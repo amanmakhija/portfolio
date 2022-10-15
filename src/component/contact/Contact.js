@@ -12,32 +12,43 @@ export default function Contact() {
     const [btnText, setBtnText] = useState("Send");
 
     const submitHandler = async (e) => {
-        e.preventDefault();
-        setBtnText("Sending...");
-
-        const url = "https://react-portfolio-db-server.herokuapp.com/message";
-
-        setTimeout(() => {
+        if (fName === "" || lName === "" || email === "" || subject === "" || message === "") {
+            e.preventDefault();
+            setBtnText("Fill the Form");
             setSent(true);
-            setBtnText("Sent!");
-        }, 4000);
 
-        setTimeout(() => {
-            setSent(false);
-            setBtnText("Send");
-            setFName("");
-            setLName("");
-            setEmail("");
-            setSubject("");
-            setMessage("");
-        }, 10000);
+            setTimeout(() => {
+                setBtnText("Send");
+                setSent(false);
+            }, 2000);
+        } else {
+            e.preventDefault();
+            setBtnText("Sending...");
+            setSent(true);
 
-        await axios.post(url, {
-            "name": `${fName} ${lName}`,
-            email,
-            subject,
-            message
-        });
+            const url = "https://react-portfolio-db-server.herokuapp.com/message";
+
+            setTimeout(() => {
+                setBtnText("Sent!");
+            }, 4000);
+
+            setTimeout(() => {
+                setSent(false);
+                setBtnText("Send");
+                setFName("");
+                setLName("");
+                setEmail("");
+                setSubject("");
+                setMessage("");
+            }, 10000);
+
+            await axios.post(url, {
+                "name": `${fName} ${lName}`,
+                email,
+                subject,
+                message
+            });
+        }
     };
 
     return (

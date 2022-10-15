@@ -47,3 +47,15 @@
         transform: rotate(360deg);
     }
 }
+
+@media screen and (max-width: 600px) {
+    .loader {
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .loadingTextContainer {
+        top: 60%;
+        left: 43%;
+    }
+}

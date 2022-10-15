@@ -69,3 +69,44 @@
     margin: 10px;
     background-color: rgba(255, 255, 255, 0.5);
 }
+
+@media screen and (max-width: 600px) {
+    .aboutMain {
+        overflow: auto;
+    }
+
+    .aboutMain {
+        padding-top: 60px;
+    }
+
+    .aboutMainDiv {
+        margin-top: 25%;
+    }
+
+    .imageContainer {
+        width: 100vw;
+        margin-top: -20%;
+        margin-left: 0;
+        margin-bottom: 20%;
+    }
+
+    .image {
+        margin-left: 240%;
+        height: 30%;
+        width: 120%;
+        border-radius: 50%;
+    }
+
+    .aboutTextContainer {
+        margin-top: 5%;
+    }
+
+    .aboutTextContainer>p {
+        margin-left: 7%;
+    }
+
+    .skillsMainDiv {
+        margin-left: 2%;
+        padding-bottom: 5%;
+    }
+}

@@ -74,3 +74,49 @@
 .button:hover {
     background-color: oldlace;
 }
+
+@media screen and (max-width: 600px) {
+    .contactMain {
+        overflow-y: hidden;
+    }
+
+    .contactMain {
+        padding-top: 50px;
+    }
+
+    .main {
+        margin-top: 20px;
+    }
+
+    .nameInput {
+        margin: 0;
+        margin-left: 15%;
+    }
+
+    .input {
+        width: 180px;
+    }
+
+    .wideInputs {
+        margin-left: 4%;
+        width: 403px;
+    }
+
+    .message {
+        margin-left: -3%;
+    }
+
+    .circle3 {
+        left: 100px;
+        height: 400px;
+        width: 400px;
+    }
+
+    .button {
+        height: 50px;
+        width: 180px;
+        margin-top: 40px;
+        padding-bottom: 0;
+        border-radius: 5px;
+    }
+}

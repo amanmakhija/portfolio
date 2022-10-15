@@ -41,3 +41,35 @@
     font-size: 70px;
     padding: 150px 0 0 100px;
 }
+
+@media screen and (max-width: 700px) {
+    .mainBody {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .circle2 {
+        width: 400px;
+        height: 400px;
+    }
+
+    .text {
+        margin-top: 10px;
+        margin-left: -70px;
+        font-size: 300%;
+    }
+
+    .circle1 {
+        height: 500px;
+        width: 500px;
+        margin-top: 250px;
+        margin-left: -90px;
+    }
+
+    .circle1>img {
+        margin-top: 100px;
+        margin-left: 150px;
+        height: 300px;
+        width: 300px;
+    }
+}

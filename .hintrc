@@ -5,6 +5,8 @@
   "browserslist": [
     "defaults",
     "not ie 11",
-    "not and_ff <= 104"
+    "not and_ff <= 104",
+    "not ios_saf <= 16",
+    "not safari <= 16"
   ]
 }

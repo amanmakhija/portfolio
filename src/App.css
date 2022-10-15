@@ -3,3 +3,14 @@ body {
     padding: 0;
     overflow: hidden;
 }
+
+@media screen and (max-width: 600px) {
+    html.touch body {
+        overflow: hidden;
+    }
+
+    body {
+        height: 100%;
+        width: 100%;
+    }
+}

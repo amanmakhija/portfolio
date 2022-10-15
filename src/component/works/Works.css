@@ -8,6 +8,9 @@
 }
 
 .worksMain>span {
+    cursor: default;
+    user-select: none;
+    color: rgba(0, 0, 0, 0.5);
     position: absolute;
     margin-top: 300px;
     top: 0;

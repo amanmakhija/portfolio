@@ -40,7 +40,7 @@ export default function Header() {
                 <div>
                     <Link className={home ? 'dark left' : 'light left'} to="/"><span>Aman</span></Link>
                 </div>
-                <div>
+                <div className='rightDiv'>
                     <div>
                         <Link className={contact ? 'dark animate right contact' : 'light animate right contact'} to="/contact-me"><span>Contact Me</span></Link>
                     </div>

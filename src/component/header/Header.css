@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
 
 .navbar {
-    width: 1550px;
+    width: 100vw;
     z-index: 10;
     background-color: #fbf2cf75;
     height: 50px;
@@ -80,4 +80,29 @@ a {
 
 .dark {
     color: #000;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        width: 100vw;
+    }
+
+    .left {
+        padding-right: 0;
+        margin-left: -5px;
+        margin-top: 3px;
+        font-size: 120%;
+    }
+
+    .rightDiv {
+        margin-left: 30px;
+    }
+
+    .right {
+        margin-right: 10px;
+        font-size: 80%;
+        margin-top: 3px;
+        margin-left: 5px;
+    }
+
 }

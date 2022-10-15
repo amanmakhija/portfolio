@@ -4,7 +4,7 @@ import Body from './component/body/Body';
 import Header from './component/header/Header';
 import Loader from './component/loader/Loader';
 import About from "./component/about/About";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Works from './component/works/Works';
 import Contact from './component/contact/Contact';
 

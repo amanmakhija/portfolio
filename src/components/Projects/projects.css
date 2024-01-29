@@ -1,0 +1,34 @@
+#projects {
+    position: relative;
+    padding-top: 15vh;
+    height: 100vh;
+    width: 100%;
+    color: #2D2E32;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.projects {
+    margin: 0 auto;
+    max-width: 107rem;
+    padding: 0 4rem;
+}
+
+.new-projects {
+    color: #2d2e32;
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    #projects {
+        margin-top: 20vh;
+    }
+
+    .new-projects {
+        font-size: 2.2rem;
+    }
+}

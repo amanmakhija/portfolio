@@ -1,0 +1,158 @@
+#about {
+    position: relative;
+    padding-top: 15vh;
+    height: 100vh;
+    width: 100%;
+    color: #2D2E32;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.about {
+    margin: 0 auto;
+    max-width: 107rem;
+    padding: 0 4rem;
+}
+
+.about-container {
+    padding: 0 5rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.image-side {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-primary {
+    position: absolute;
+    width: 30rem !important;
+    border-radius: 15px;
+}
+
+.image-secondary {
+    border-radius: 1.7rem;
+    height: 6rem;
+    width: 6rem;
+    position: absolute;
+    right: 5%;
+    bottom: 12%;
+    z-index: 10;
+}
+
+.image-side>span {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 12rem;
+    position: absolute;
+    right: -3%;
+    bottom: 0;
+    width: 12rem;
+}
+
+.image-side>span>img {
+    -webkit-animation: rotate 8s linear infinite;
+    animation: rotate 8s linear infinite;
+    width: 12rem;
+}
+
+.text-side {
+    padding: 0 3rem;
+}
+
+.text-side>h3 {
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.text-side>h4 {
+    color: #2d2e32;
+    font-family: Poppins, sans-serif;
+    font-size: 1.7rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+.text-side>p {
+    color: #767676;
+    font-family: Mulish, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .about-container {
+        margin-top: 80vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-side {
+        margin-bottom: 3rem;
+    }
+
+    .image-primary {
+        width: 80% !important;
+    }
+
+    .image-secondary {
+        width: 5rem;
+        height: 5rem;
+        right: 4vw;
+        bottom: 0;
+        top: 15vh;
+    }
+
+    .image-side>span {
+        width: 10rem;
+        height: 10rem;
+        right: 0;
+        bottom: 0;
+        top: 10vh;
+    }
+
+    .image-side>span>img {
+        width: 10rem;
+    }
+
+    .text-side {
+        text-align: center;
+        padding: 20vh 5vw;
+    }
+
+    .text-side>h3 {
+        font-size: 1.5rem;
+    }
+
+    .text-side>h4 {
+        font-size: 1.5rem;
+    }
+
+    .text-side>p {
+        font-size: 1.2rem;
+    }
+}

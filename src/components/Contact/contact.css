@@ -1,0 +1,153 @@
+#contact {
+    position: relative;
+    padding-top: 15vh;
+    height: 100vh;
+    width: 100%;
+    color: #2D2E32;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.contact {
+    margin: 0 auto;
+    max-width: 107rem;
+    padding: 0 4rem;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-title {
+    margin-bottom: -5rem;
+}
+
+.contact-title>p {
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: -1rem;
+}
+
+.contact-title>h3 {
+    color: #2d2e32;
+    font-size: 1.7rem;
+}
+
+.contact-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8rem;
+    margin-top: 6rem;
+}
+
+.contact-icon {
+    align-items: center;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.contact-icon>span {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    color: red;
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+    width: 5rem;
+}
+
+.contact-icon>span>svg {
+    height: 2rem;
+    width: 2rem;
+}
+
+.contact-icon:last-child>span {
+    margin-top: 1rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-icon:first-child {
+    margin-top: 1.2rem;
+}
+
+.contact-icon:first-child>.contact-info>h3 {
+    margin-bottom: -1.7rem;
+}
+
+.contact-info>h3 {
+    color: #2d2e32;
+    font-size: 1.3rem;
+    margin-bottom: -0.5rem;
+}
+
+.contact-info>p,
+.contact-info>a {
+    color: #767676;
+    cursor: pointer;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.contact-info>p:hover, .contact-info>a:hover {
+    color: red;
+}
+
+@media screen and (max-width: 900px) {
+    .contact-content {
+        gap: 0;
+    }
+    
+    .contact-title {
+        margin-bottom: -3rem;
+    }
+
+    .contact-title>p {
+        font-size: 1rem;
+    }
+
+    .contact-title>h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact-icons {
+        margin-top: 3rem;
+        gap: 4rem;
+    }
+
+    .contact-icon>span {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .contact-icon>span>svg {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .contact-icon:last-child>span {
+        margin-top: 0.5rem;
+    }
+
+    .contact-info>h3 {
+        font-size: 1.1rem;
+    }
+
+    .contact-info>p,
+    .contact-info>a {
+        font-size: 1.1rem;
+    }
+}

@@ -8,7 +8,7 @@ export default function Home() {
 
     useEffect(() => {
         const intervalId = setInterval(() => {
-        setAngle(prevAngle => (prevAngle + 10) % 360);
+            setAngle(prevAngle => (prevAngle + 10) % 360);
         }, 100);
 
         return () => clearInterval(intervalId); // Cleanup interval on component unmount
@@ -73,15 +73,12 @@ export default function Home() {
                 <p>Tech Stack</p>
                 <div className='logos'>
                     <ul>
-                        <li><img src='https://skillicons.dev/icons?i=html,css' alt='skill icons' /></li>
-                        <li><img src='https://skillicons.dev/icons?i=js,jquery' alt='skill icons' /></li>
-                        <li><img src='https://skillicons.dev/icons?i=bootstrap,tailwind' alt='skill icons' /></li>
                         <li><img src='https://skillicons.dev/icons?i=mongodb,express' alt='skill icons' /></li>
                         <li><img src='https://skillicons.dev/icons?i=react,nodejs' alt='skill icons' /></li>
+                        <li><img src='https://skillicons.dev/icons?i=js,tailwind' alt='skill icons' /></li>
                         <li><img src='https://skillicons.dev/icons?i=aws,gcp' alt='skill icons' /></li>
                         <li><img src='https://skillicons.dev/icons?i=azure,docker' alt='skill icons' /></li>
                         <li><img src='https://skillicons.dev/icons?i=java,kotlin' alt='skill icons' /></li>
-                        <li><img src='https://skillicons.dev/icons?i=androidstudio,firebase' alt='skill icons' /></li>
                     </ul>
                 </div>
             </div>

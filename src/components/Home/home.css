@@ -86,7 +86,7 @@
 .tech-stack {
     padding: 0 5vw;
     align-items: center;
-    bottom: -3rem;
+    bottom: 0;
     color: #767676;
     display: flex;
     font-size: 1.7rem;
@@ -104,13 +104,13 @@
 }
 
 .logos {
-    margin-left: -2rem;
+    margin-left: -7rem;
 }
 
 .logos>ul {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 3rem;
+    gap: 2rem;
     list-style: none;
 }
 
@@ -119,9 +119,9 @@
 }
 
 .logos>ul>li>img {
-    height: 6rem;
+    height: 5rem;
     transition: all .3s ease-in-out;
-    width: 7rem;
+    width: 6rem;
 }
 
 .logos>ul>li>img:hover {

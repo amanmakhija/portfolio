@@ -15,7 +15,7 @@ export default function Home() {
     }, []);
 
     function generateCircularBorderRadius() {
-        const stretchFactor = 20; // Adjust the stretch factor as needed
+        const stretchFactor = 25; // Adjust the stretch factor as needed
         const x = Math.cos((angle * Math.PI) / 180) * stretchFactor + 50;
         const y = Math.sin((angle * Math.PI) / 180) * stretchFactor + 50;
 

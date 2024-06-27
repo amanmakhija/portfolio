@@ -167,6 +167,7 @@
         width: 50%;
         align-items: center;
         justify-content: center;
+        margin-left: 1rem;
     }
 
     .home-heading>p {

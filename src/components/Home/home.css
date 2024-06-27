@@ -84,7 +84,7 @@
 }
 
 .tech-stack {
-    padding: 0 7vw;
+    padding: 0 5vw;
     align-items: center;
     bottom: 0;
     color: #767676;
@@ -110,7 +110,7 @@
 .logos>ul {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 2rem;
+    column-gap: 3rem;
     list-style: none;
 }
 

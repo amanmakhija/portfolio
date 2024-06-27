@@ -86,7 +86,7 @@
 .tech-stack {
     padding: 0 5vw;
     align-items: center;
-    bottom: 0;
+    bottom: -3rem;
     color: #767676;
     display: flex;
     font-size: 1.7rem;
@@ -104,7 +104,7 @@
 }
 
 .logos {
-    margin-left: -7rem;
+    margin-left: -2rem;
 }
 
 .logos>ul {
